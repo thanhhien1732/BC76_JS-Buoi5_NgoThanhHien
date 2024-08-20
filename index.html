@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="https://onecompiler.com/images/logos/javascript.svg" type="image/x-icon">
+    <title>Bài tập JS Buổi 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container py-5">
+        <h1 class="text-center">Bài tập JS Buổi 5</h1>
+        <h2 class="text-center mb-4">Ngô Thanh Hiền - Lớp BC76</h2>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-justified border-bottom-0">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#bai1">Bài 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#bai2">Bài 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#bai3">Bài 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#bai4">Bài 4</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content border rounded-bottom">
+            <!-- Bài 1: Quản lý tuyển sinh -->
+            <div class="tab-pane container fade show text-center w-75 active" id="bai1">
+                <!-- Title -->
+                <h3 class="mt-4">Quản lý tuyển sinh</h3>
+                <p></p>
+                <!-- Input -->
+                <div class="my-4">
+                    <!-- Điểm chuẩn -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Điểm chuẩn:</label>
+                        <input type="number" class="form-control text-center w-50" id="soThu1"
+                            placeholder="Vui lòng nhập điểm chuẩn">
+                    </div>
+                    <!-- Chọn khu vực -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Chọn khu vực:</label>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Vui lòng chọn khu vực
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">Khu vực A</a></li>
+                                <li><a class="dropdown-item">Khu vực B</a></li>
+                                <li><a class="dropdown-item">Khu vực C</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Chọn đối tượng -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Chọn đối tượng:</label>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Vui lòng chọn khu vực
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">Đối tượng 1</a></li>
+                                <li><a class="dropdown-item">Đối tượng 2</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Điểm môn thứ 1 -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Điểm môn thứ 1:</label>
+                        <input type="number" class="form-control text-center w-50" id="soThu3"
+                            placeholder="Vui lòng nhập điểm môn thứ 1">
+                    </div>
+                    <!-- Điểm môn thứ 2 -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Điểm môn thứ 2:</label>
+                        <input type="number" class="form-control text-center w-50" id="soThu4"
+                            placeholder="Vui lòng nhập điểm môn thứ 2">
+                    </div>
+                    <!-- Điểm môn thứ 3 -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Điểm môn thứ 3:</label>
+                        <input type="number" class="form-control text-center w-50" id="soThu5"
+                            placeholder="Vui lòng nhập điểm môn thứ 3">
+                    </div>
+                </div>
+                <!-- Button -->
+                <button class="btn btn-dark soTB">Kết quả</button>
+                <!-- Kết quả -->
+                <p class="kqTrungBinh bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
+            </div>
+
+            <!-- Bài 2: Tính tiền điện -->
+            <div class="tab-pane container fade text-center w-75" id="bai2">
+                <!-- Title -->
+                <h3 class="mt-4">Tính tiền điện</h3>
+                <p></p>
+                <!-- Input -->
+                <div class="my-4">
+                    <!-- Họ tên -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Họ tên:</label>
+                        <input type="text" class="form-control text-center w-50" id="soThu1"
+                            placeholder="Vui lòng nhập họ tên">
+                    </div>
+                    <!-- Số kw -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Số kw:</label>
+                        <input type="number" class="form-control text-center w-50" id="soThu2"
+                            placeholder="Vui lòng nhập số kw">
+                    </div>
+                </div>
+                <!-- Button -->
+                <button class="btn btn-dark soTB">Tính tiền điện</button>
+                <!-- Kết quả -->
+                <p class="kqTrungBinh bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
+            </div>
+
+            <!-- Bài 3: Tính thuế thu nhập cá nhân -->
+            <div class="tab-pane container fade text-center w-75" id="bai3">
+                <!-- Title -->
+                <h3 class="mt-4">Tính thuế thu nhập cá nhân</h3>
+                <p></p>
+                <!-- Input -->
+                <div class="my-4">
+                    <!-- Họ tên -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Họ tên:</label>
+                        <input type="text" class="form-control text-center w-50" id="soThu1"
+                            placeholder="Vui lòng nhập họ tên">
+                    </div>
+                    <!-- Tổng thu nhập năm -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Tổng thu nhập năm:</label>
+                        <input type="number" class="form-control text-center w-50" id="soThu2"
+                            placeholder="Vui lòng nhập tổng thu nhập năm">
+                    </div>
+                    <!-- Số người phụ thuộc -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Số người phụ thuộc:</label>
+                        <input type="number" class="form-control text-center w-50" id="soThu2"
+                            placeholder="Vui lòng nhập số người phụ thuộc">
+                    </div>
+                </div>
+                <!-- Button -->
+                <button class="btn btn-dark soTB">Tính tiền thuế</button>
+                <!-- Kết quả -->
+                <p class="kqTrungBinh bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
+            </div>
+
+            <!-- Bài 4: Tính tiền cáp -->
+            <div class="tab-pane container fade text-center w-75" id="bai4">
+                <!-- Title -->
+                <h3 class="mt-4">Tính tiền cáp</h3>
+                <p></p>
+                <!-- Input -->
+                <div class="my-4">
+                    <!-- Chọn loại khách hàng -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Chọn loại khách hàng:</label>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Vui lòng chọn khu vực
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">Nhà dân</a></li>
+                                <li><a class="dropdown-item">Doanh nghiệp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Mã khách hàng -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Mã khách hàng:</label>
+                        <input type="text" class="form-control text-center w-50" id="soThu1"
+                            placeholder="Vui lòng nhập mã khách hàng">
+                    </div>
+                    <!-- Số kênh cao cấp -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="" class="form-label fw-bold">Số kênh cao cấp:</label>
+                        <input type="number" class="form-control text-center w-50" id="chieuRong"
+                            placeholder="Vui lòng nhập số kênh cao cấp" min="1">
+                    </div>
+                </div>
+                <!-- Button -->
+                <button class="btn btn-dark tinh">Tính</button>
+                <!-- Kết quả -->
+                <p class="kqHinhChuNhat bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
