@@ -155,7 +155,7 @@ document.querySelector('.soTienDien').addEventListener('click', hoaDonTienDien);
 function tinhThuNhapChiuThue(thuNhapNam, soNguoiPhuThuoc) {
     const giamTruCoBan = 4e+6; // Giảm trừ cơ bản: 4 triệu VND
     const giamTruPhuThuoc = 1.6e+6; // Giảm trừ người phụ thuộc: 1.6 triệu VND/người
-    return thuNhapNam - giamTruCoBan - (soNguoiPhuThuoc * giamTruPhuThuoc);
+    return thuNhapNam - giamTruCoBan - soNguoiPhuThuoc * giamTruPhuThuoc;
 }
 
 // Hàm tính tiền thuế phải nộp dựa trên thu nhập chịu thuế và từng bậc thuế
