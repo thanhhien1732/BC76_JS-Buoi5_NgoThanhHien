@@ -17,7 +17,6 @@
     <div class="container py-5">
         <h1 class="text-center">Bài tập JS Buổi 5</h1>
         <h2 class="text-center mb-4">Ngô Thanh Hiền - Lớp BC76</h2>
-
         <!-- Nav tabs -->
         <ul class="nav nav-tabs nav-justified border-bottom-0">
             <li class="nav-item">
@@ -33,75 +32,67 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#bai4">Bài 4</a>
             </li>
         </ul>
-
         <!-- Tab panes -->
         <div class="tab-content border rounded-bottom">
             <!-- Bài 1: Quản lý tuyển sinh -->
             <div class="tab-pane container fade show text-center w-75 active" id="bai1">
                 <!-- Title -->
                 <h3 class="mt-4">Quản lý tuyển sinh</h3>
-                <p></p>
                 <!-- Input -->
                 <div class="my-4">
                     <!-- Điểm chuẩn -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Điểm chuẩn:</label>
-                        <input type="number" class="form-control text-center w-50" id="soThu1"
-                            placeholder="Vui lòng nhập điểm chuẩn">
+                        <label for="diemChuan" class="form-label fw-bold">Điểm chuẩn:</label>
+                        <input type="number" class="form-control text-center w-50" id="diemChuan"
+                            placeholder="Nhập điểm chuẩn">
                     </div>
                     <!-- Chọn khu vực -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Chọn khu vực:</label>
-                        <div class="dropdown">
-                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Vui lòng chọn khu vực
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Khu vực A</a></li>
-                                <li><a class="dropdown-item">Khu vực B</a></li>
-                                <li><a class="dropdown-item">Khu vực C</a></li>
-                            </ul>
-                        </div>
+                        <label for="khuVuc" class="form-label fw-bold">Chọn khu vực:</label>
+                        <select id="khuVuc" class="form-select w-50">
+                            <option value="" disabled selected>Chọn khu vực ưu tiên</option>
+                            <option value="X">Khu vực không ưu tiên</option>
+                            <option value="A">Khu vực A (+2)</option>
+                            <option value="B">Khu vực B (+1)</option>
+                            <option value="C">Khu vực C (+0.5)</option>
+                        </select>
                     </div>
                     <!-- Chọn đối tượng -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Chọn đối tượng:</label>
-                        <div class="dropdown">
-                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Vui lòng chọn khu vực
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Đối tượng 1</a></li>
-                                <li><a class="dropdown-item">Đối tượng 2</a></li>
-                            </ul>
-                        </div>
+                        <label for="doiTuong" class="form-label fw-bold">Chọn đối tượng:</label>
+                        <select id="doiTuong" class="form-select w-50">
+                            <option value="" disabled selected>Chọn đối tượng ưu tiên</option>
+                            <option value="0">Không thuộc đối tượng ưu tiên</option>
+                            <option value="1">Đối tượng 1 (+2.5)</option>
+                            <option value="2">Đối tượng 2 (+1.5)</option>
+                            <option value="3">Đối tượng 3 (+1)</option>
+                        </select>
                     </div>
                     <!-- Điểm môn thứ 1 -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Điểm môn thứ 1:</label>
-                        <input type="number" class="form-control text-center w-50" id="soThu3"
-                            placeholder="Vui lòng nhập điểm môn thứ 1">
+                        <label for="mon1" class="form-label fw-bold">Điểm môn thứ 1:</label>
+                        <input type="number" class="form-control text-center w-50" id="mon1"
+                            placeholder="Nhập điểm môn thứ 1" min="0" max="10">
                     </div>
                     <!-- Điểm môn thứ 2 -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Điểm môn thứ 2:</label>
-                        <input type="number" class="form-control text-center w-50" id="soThu4"
-                            placeholder="Vui lòng nhập điểm môn thứ 2">
+                        <label for="mon2" class="form-label fw-bold">Điểm môn thứ 2:</label>
+                        <input type="number" class="form-control text-center w-50" id="mon2"
+                            placeholder="Nhập điểm môn thứ 2" min="0" max="10">
                     </div>
                     <!-- Điểm môn thứ 3 -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Điểm môn thứ 3:</label>
-                        <input type="number" class="form-control text-center w-50" id="soThu5"
-                            placeholder="Vui lòng nhập điểm môn thứ 3">
+                        <label for="mon3" class="form-label fw-bold">Điểm môn thứ 3:</label>
+                        <input type="number" class="form-control text-center w-50" id="mon3"
+                            placeholder="Nhập điểm môn thứ 3" min="0" max="10">
                     </div>
                 </div>
                 <!-- Button -->
-                <button class="btn btn-dark soTB">Kết quả</button>
+                <button class="btn btn-dark ketQua">Kết quả</button>
                 <!-- Kết quả -->
-                <p class="kqTrungBinh bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
+                <p class="kqTuyenSinh bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
             </div>
+
 
             <!-- Bài 2: Tính tiền điện -->
             <div class="tab-pane container fade text-center w-75" id="bai2">
@@ -112,22 +103,23 @@
                 <div class="my-4">
                     <!-- Họ tên -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Họ tên:</label>
-                        <input type="text" class="form-control text-center w-50" id="soThu1"
-                            placeholder="Vui lòng nhập họ tên">
+                        <label for="hoTen" class="form-label fw-bold">Họ tên:</label>
+                        <input type="text" class="form-control text-center w-50" id="hoTen"
+                            placeholder="Vui lòng nhập họ tên" required>
                     </div>
                     <!-- Số kw -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Số kw:</label>
-                        <input type="number" class="form-control text-center w-50" id="soThu2"
-                            placeholder="Vui lòng nhập số kw">
+                        <label for="soKW" class="form-label fw-bold">Số kw:</label>
+                        <input type="number" class="form-control text-center w-50" id="soKW"
+                            placeholder="Vui lòng nhập số kw" required>
                     </div>
                 </div>
                 <!-- Button -->
-                <button class="btn btn-dark soTB">Tính tiền điện</button>
+                <button class="btn btn-dark soTienDien" id="tinhTienDienBtn">Tính tiền điện</button>
                 <!-- Kết quả -->
-                <p class="kqTrungBinh bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
+                <p class="kqTienDien bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
             </div>
+
 
             <!-- Bài 3: Tính thuế thu nhập cá nhân -->
             <div class="tab-pane container fade text-center w-75" id="bai3">
@@ -139,66 +131,65 @@
                     <!-- Họ tên -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
                         <label for="" class="form-label fw-bold">Họ tên:</label>
-                        <input type="text" class="form-control text-center w-50" id="soThu1"
+                        <input type="text" class="form-control text-center w-50" id="hoTenThue"
                             placeholder="Vui lòng nhập họ tên">
                     </div>
                     <!-- Tổng thu nhập năm -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
                         <label for="" class="form-label fw-bold">Tổng thu nhập năm:</label>
-                        <input type="number" class="form-control text-center w-50" id="soThu2"
+                        <input type="number" class="form-control text-center w-50" id="thuNhapNam"
                             placeholder="Vui lòng nhập tổng thu nhập năm">
                     </div>
                     <!-- Số người phụ thuộc -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
                         <label for="" class="form-label fw-bold">Số người phụ thuộc:</label>
-                        <input type="number" class="form-control text-center w-50" id="soThu2"
+                        <input type="number" class="form-control text-center w-50" id="nguoiPhuThuoc"
                             placeholder="Vui lòng nhập số người phụ thuộc">
                     </div>
                 </div>
                 <!-- Button -->
-                <button class="btn btn-dark soTB">Tính tiền thuế</button>
+                <button class="btn btn-dark tienThue">Tính tiền thuế</button>
                 <!-- Kết quả -->
-                <p class="kqTrungBinh bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
+                <p class="kqThue bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
             </div>
+
 
             <!-- Bài 4: Tính tiền cáp -->
             <div class="tab-pane container fade text-center w-75" id="bai4">
-                <!-- Title -->
                 <h3 class="mt-4">Tính tiền cáp</h3>
-                <p></p>
-                <!-- Input -->
                 <div class="my-4">
-                    <!-- Chọn loại khách hàng -->
+                    <!-- Loại khách hàng -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Chọn loại khách hàng:</label>
-                        <div class="dropdown">
-                            <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Vui lòng chọn khu vực
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Nhà dân</a></li>
-                                <li><a class="dropdown-item">Doanh nghiệp</a></li>
-                            </ul>
-                        </div>
+                        <label for="loaiKhachHang" class="form-label fw-bold">Loại khách hàng:</label>
+                        <select id="loaiKhachHang" class="form-select w-50">
+                            <option value="" disabled selected>Chọn loại khách hàng</option>
+                            <option value="nhaDan">Nhà dân</option>
+                            <option value="doanhNghiep">Doanh nghiệp</option>
+                        </select>
                     </div>
                     <!-- Mã khách hàng -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Mã khách hàng:</label>
-                        <input type="text" class="form-control text-center w-50" id="soThu1"
+                        <label for="maKhachHang" class="form-label fw-bold">Mã khách hàng:</label>
+                        <input type="text" class="form-control text-center w-50" id="maKhachHang"
                             placeholder="Vui lòng nhập mã khách hàng">
                     </div>
                     <!-- Số kênh cao cấp -->
                     <div class="d-flex justify-content-center mb-3 gap-3">
-                        <label for="" class="form-label fw-bold">Số kênh cao cấp:</label>
-                        <input type="number" class="form-control text-center w-50" id="chieuRong"
-                            placeholder="Vui lòng nhập số kênh cao cấp" min="1">
+                        <label for="soKenhCaoCap" class="form-label fw-bold">Số kênh cao cấp:</label>
+                        <input type="number" class="form-control text-center w-50" id="soKenhCaoCap"
+                            placeholder="Vui lòng nhập số kênh cao cấp" min="0">
+                    </div>
+                    <!-- Số kết nối (chỉ hiển thị cho doanh nghiệp) -->
+                    <div class="d-flex justify-content-center mb-3 gap-3">
+                        <label for="soKetNoi" class="form-label fw-bold" id="soKetNoiLabel">Số kết nối:</label>
+                        <input type="number" class="form-control text-center w-50" id="soKetNoi"
+                            placeholder="Vui lòng nhập số kết nối" min="0">
                     </div>
                 </div>
                 <!-- Button -->
-                <button class="btn btn-dark tinh">Tính</button>
+                <button class="btn btn-dark tinhTienCap">Tính tiền cáp</button>
                 <!-- Kết quả -->
-                <p class="kqHinhChuNhat bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
+                <p class="kqTienCap bg-success bg-opacity-75 p-2 text-white mt-3 w-75 mx-auto rounded"></p>
             </div>
         </div>
     </div>
